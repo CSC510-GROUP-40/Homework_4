@@ -17,5 +17,5 @@ grep -l 'sample' dataset1/* | xargs grep -l 'CSC510' | xargs grep -oE "CSC510" |
     # rename the file
     mv "$file" "$new_file"
     
-    echo "Renamed $file to $new_file (Count: $count)"
+    echo "Renamed $file to $new_file"
 done
