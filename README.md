@@ -1,11 +1,12 @@
-[![Language: Shell](https://img.shields.io/badge/Language-Python-blue.svg)](https://www.python.org/)
+[![Language: Shell](https://img.shields.io/badge/Language-Shell-blue.svg)](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
 [![License: Apache-2-License](https://img.shields.io/badge/Licence-Apache--2--Licence-green.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-[![Platform: Linux](https://img.shields.io/badge/Platform-Linux-yellow.svg)](https://www.linux.org/)
+[![Platform: MacOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white)](https://en.wikipedia.org/wiki/MacOS)
+[![Platform: Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://www.linux.org/)
 
 # Homework_4
 
 ### Contributing
-Contributions to the Quadratic Equation Solver are welcome! If you have suggestions for improvements or new features, please fork the repository and create a pull request. You can also open an issue to discuss your ideas.
+Contributions to the Homework 4 are welcome! If you have suggestions for improvements or new features, please fork the repository and create a pull request. You can also open an issue to discuss your ideas.
 
 To Contribute
 - Fork the repository.
