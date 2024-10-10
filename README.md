@@ -4,7 +4,7 @@
 [![Platform: Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://www.linux.org/)
 
 # Homework_4
-
+This homeworks uses shell, sed and gawk commands for basic data analysis and manipulation via the bash terminal.
 ### Contributing
 Contributions to the Homework 4 are welcome! If you have suggestions for improvements or new features, please fork the repository and create a pull request. You can also open an issue to discuss your ideas.
 
