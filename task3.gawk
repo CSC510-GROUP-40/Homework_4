@@ -1,28 +1,31 @@
 #!/opt/homebrew/bin/gawk -f
 
 BEGIN {
-    FS = ","  # Set the field separator to comma
+    FPAT = "([^,]*|\"([^\"]|\"\")*\")"
+    OFS=","
     count = 0
     total_age = 0
 }
-
-function trim(value) {
-    gsub(/^[ \t]+|[ \t]+$/, "", value)  # Remove leading and trailing spaces or tabs
-    return value
-}
-
 {
-    $3 = trim($3)    # Trim field 3
-    $13 = trim($13)  # Trim field 12
+    # extract passengers from 2nd class who embarked at Southampton
+    if ($3 == "2" && $NF == "S") {
+        
+        # replace male/female labels with M/F
+        if ($5 == "male") {
+            $5 = "M"
+        }
+        else if ($5 == "female") {
+            $5 = "F"
+        }
+        
+        # filter out null age value
+        if ($6 != "") {
+            count++
+            total_age += $6
+        }
+        print $0
+    }
 }
-
-$3 == "2" && index($13, "S") > 0   {
-    count++ 
-    total_age += $7
-}
-
 END {
-    print "Total count: " count
-    print "Total age: " total_age 
-    print "Ageverage Age: " total_age/count
+    print "Average Age: " total_age/count
 }
